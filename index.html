@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -7,21 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Easybank landing page</title>
-
+<link rel="stylesheet" href="./public/styles.css">
 </head>
 <body>
 <nav class="nav">
   <picture class="logo-nav">
     <img src="./images/logo.svg" alt="Logo Easybank">
   </picture>
-  <ul class="menu">
-    <li class="menu-item">
-      <a href="/index.html" class="link">Home</a>
-      <a href="#" class="link">About</a>
-      <a href="#" class="link">Contact</a>
-      <a href="#" class="link">Blog</a>
-      <a href="#" class="link">Careers</a>
-    </li>
+  <ul class="menu-nav">
+    <li class="menu-item"><a href="#" class="link">Home</a></li>
+    <li class="menu-item"><a href="#" class="link">About Us</a></li>
+    <li class="menu-item"><a href="#" class="link">Contact</a></li>
+    <li class="menu-item"><a href="#" class="link">Carrers</a></li>
+    <li class="menu-item"><a href="#" class="link">Blog</a></li>
   </ul>
   <picture class="icon-menu-nav">
     <img src="./images/icon-hamburger.svg" alt="Icon icon-hamburger">
@@ -34,7 +32,7 @@
     </picture>
   </div>
   <div class="header-text">
-    <h1 class="title">Next generation digital banking</h1>
+    <h1 class="title1">Next generation digital banking</h1>
     <p class="paragraph">
       Take your financial life online. Your Easybank account will be a one-stop-shop 
       for spending, saving, budgeting, investing, and much more.
@@ -89,45 +87,74 @@
     </article>
   </div>
 </section>
-
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set 
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...
-
-  
-
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<section class="latest-articles">
+  <header class="header-latest-articles">
+    <h2 class="title2">Latest Articles
+    </h2>
+  </header>
+<div class="wrapper-latest-articles">
+  <article class="card-latest">
+    <picture class="image-article">
+      <img src="./images/image-currency.jpg" alt="">
+    </picture>
+    <h4 class="title4">By Claire Robinson</h4>
+    <h3 class="title3">Receive money in any currency with no fees</h3>
+    <p class="paragraph">The world is getting smaller and we’re becoming more mobile. So why should you be 
+      forced to only receive money in a single …</p>
+  </article>
+  <article class="card-latest">
+    <picture class="image-article">
+      <img src="./images/image-restaurant.jpg" alt="image-restaurant">
+    </picture>
+    <h4 class="title4">By Wilson Hutton</h4>
+    <h3 class="title3">  Treat yourself without worrying about money
+    </h3>
+    <p class="paragraph">Our simple budgeting feature allows you to separate out your spending and set 
+      realistic limits each month. That means you …</p>
+  </article>
+  <article class="card-latest">
+    <picture class="image-article">
+      <img src="./images/image-plane.jpg" alt="image-plane">
+    </picture>
+    <h4 class="title4">By Wilson Hutton</h4>
+    <h3 class="title3">Take your Easybank card wherever you go</h3>
+    <p class="paragraph">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+      while you’re abroad. We’ll even show you …</p>
+  </article>
+  <article class="card-latest">
+    <picture class="image-article">
+      <img src="./images/image-confetti.jpg" alt="image-confetti">
+    </picture>
+    <h4 class="title4">By Claire Robinson</h4>
+    <h3 class="title3">Receive money in any currency with no fees</h3>
+    <p class="paragraph">Our invite-only Beta accounts are now live! After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+      It’s easy to request an invite through the site ...</p>
+  </article>
+</div>
+</section>
+<footer class="footer">
+  <picture class="logo">
+    <img src="./images/logo.svg" alt="logo Easybank">
+  </picture>
+  <div class="social-media">
+    <img src="./images/icon-facebook.svg" alt="icon facebook" class="social">
+    <img src="./images/icon-youtube.svg" alt="icon youtube" class="social">
+    <img src="./images/icon-twitter.svg" alt="icon twitter" class="social">
+    <img src="./images/icon-pinterest.svg" alt="icon pinterest" class="social">
+    <img src="./images/icon-instagram.svg" alt="icon instagram" class="social">
   </div>
+  <ul class="menu-footer">
+    <li class="menu-item">
+      <a href="#" class="link">About Us</a>
+      <a href="#" class="link">Contact</a>
+      <a href="#" class="link">Blog</a>
+      <a href="#" class="link">Careers</a>
+      <a href="#" class="link">Support</a>
+      <a href="#" class="link">Privacy Policy</a>
+    </li>
+  </ul>
+  <button class="btn-footer">Request Invite</button>
+  <footer class="copyrigth">© Easybank. All Rights Reserved</footer>
+</footer>
 </body>
 </html>
